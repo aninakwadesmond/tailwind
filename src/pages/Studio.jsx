@@ -64,7 +64,7 @@ function Studio() {
             loopStudio
           </h1>
           <div
-            className={`items-center justify-center gap-2 text-lg text-fuchsia-200 md:block ${menu ? `text-md absolute top-[20%] flex flex-col space-y-2 space-x-0` : "hidden"}`}
+            className={`items-center justify-center gap-2 space-x-2 text-lg text-fuchsia-200 md:block ${menu ? `text-md absolute top-[20%] flex flex-col space-y-2 space-x-0` : "hidden"}`}
           >
             <a
               href="#about"
@@ -133,7 +133,7 @@ function Studio() {
         <div className="flex w-screen flex-col space-y-10 md:relative md:w-[70%] md:justify-center">
           <div className="mx-auto flex w-[90%] items-center justify-center md:justify-start">
             <img
-              src="../public/images/images/desktop/image-interactive.jpg"
+              src="/images/desktop/image-interactive.jpg"
               alt="interrractive image"
               className="w-100"
             />

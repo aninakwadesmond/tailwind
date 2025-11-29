@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Nunito", sans-serif;
+}
+
+.button {
+  @apply flex cursor-pointer items-center justify-center overflow-x-hidden font-bold tracking-tighter text-teal-100 capitalize bg-blend-darken shadow-teal-500/30 duration-500 hover:bg-teal-500/80 active:-translate-y-1;
+}
+
+@layer base {
+  body {
+    @apply font-primary;
+    @apply max-w-screen overflow-x-hidden;
+  }
+  html {
+    scroll-behaviour: "smoth";
+  }
+}

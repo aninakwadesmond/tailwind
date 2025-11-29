@@ -133,7 +133,7 @@ function Studio() {
         <div className="flex w-screen flex-col space-y-10 md:relative md:w-[70%] md:justify-center">
           <div className="mx-auto flex w-[90%] items-center justify-center md:justify-start">
             <img
-              src="images/images/desktop/image-interactive.jpg"
+              src="/images/images/desktop/image-interactive.jpg"
               alt="interrractive image"
               className="w-100"
             />

@@ -43,10 +43,7 @@ function Shortly() {
           <div className="flex w-full items-center justify-between">
             <div className="flex items-center justify-start space-x-6">
               <p>
-                <img
-                  src="../../public/images/shortly/logo.svg"
-                  alt="logo image"
-                />
+                <img src="/images/shortly/logo.svg" alt="logo image" />
               </p>
               <div className="hidden items-center justify-start space-x-4 md:flex">
                 <a
@@ -93,7 +90,7 @@ function Shortly() {
           <div className="flex w-full flex-col space-y-8 md:mt-5 md:flex-row md:justify-between">
             <div className="mx-auto flex w-full flex-col items-center justify-center md:justify-end">
               <img
-                src="../../public/images/shortly/illustration-working.svg"
+                src="/images/shortly/illustration-working.svg"
                 alt="working"
                 className="max-w-[28rem] md:max-w-[18rem] md:self-end lg:max-w-[22rem]"
               />
@@ -250,8 +247,8 @@ function Shortly() {
           style={{
             backgroundImage:
               size >= 1024
-                ? "url(../../public/images/shortly/bg-boost-desktop.svg)"
-                : "url(../../public/images/shortly/bg-boost-mobile.svg)",
+                ? "url(/images/shortly/bg-boost-desktop.svg)"
+                : "url(/images/shortly/bg-boost-mobile.svg)",
           }}
         >
           <div className="mb-5 flex flex-col items-center justify-center space-y-5">
@@ -271,7 +268,7 @@ function Shortly() {
         >
           <div className="flex-center flex items-center justify-center space-y-10 pt-10 md:pt-0">
             <p className="flex items-center justify-center">
-              <img src="../../public/images/shortly/logo.svg" alt="logo" />
+              <img src="/images/shortly/logo.svg" alt="logo" />
             </p>
           </div>
           <div className="flex flex-col items-center justify-center space-y-6 md:flex-row md:justify-start md:space-x-6">
@@ -327,7 +324,7 @@ function Statistics({ icon, header, translate, size }) {
     >
       {/* <p className="left:[50%] absolute top-[0%] translate-y-[-50%] rounded-full bg-blue-950 p-3"> */}
       <img
-        src={`../../public/images/shortly/${icon}`}
+        src={`/images/shortly/${icon}`}
         alt=""
         className="left:[50%] absolute top-[0%] translate-y-[-50%] rounded-full bg-blue-950 p-5"
       />

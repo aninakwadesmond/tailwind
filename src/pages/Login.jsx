@@ -54,11 +54,7 @@ function Login() {
           </div>
         </div>
         <div className="hidden h-full w-full md:col-span-2 md:block">
-          <img
-            src="../../public/images/image.jpg "
-            alt=""
-            className="h-full w-full"
-          />
+          <img src="/images/image.jpg " alt="" className="h-full w-full" />
         </div>
       </div>
     </div>

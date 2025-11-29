@@ -8,12 +8,12 @@ function Testimonial() {
     <div className="flex w-screen flex-col items-center justify-center">
       <div className="mx-auto my-5 grid w-[92%] space-y-5 md:grid-cols-4 md:grid-rows-2 md:gap-4">
         <SingleTestimonial
-          image="../../public/images/testimonial/image-daniel.jpg"
+          image="/images/testimonial/image-daniel.jpg"
           name="Daniel clifford"
           header=" I recieved a job offer mid-course, and the subjects I learned were
         current,if not more so, in the country I joined. I honestly feel I got
         every penny's worth."
-          backgroundImage="url(../../public/images/testimonial/bg-pattern-quotation.svg)"
+          backgroundImage="url(/images/testimonial/bg-pattern-quotation.svg)"
           bgColor="bg-purple-600"
           colSpan="2"
           order="order-1"
@@ -27,7 +27,7 @@ function Testimonial() {
           corrupti? Laboriosam veniam laudantium sint commodi."
         </SingleTestimonial>
         <SingleTestimonial
-          image="../../public/images/testimonial/image-jonathan.jpg"
+          image="/images/testimonial/image-jonathan.jpg"
           name="Jonathan Walters"
           header="The team was very supportive and kept me motivated"
           bgColor="bg-zinc-600"
@@ -38,7 +38,7 @@ function Testimonial() {
           optio earum quod dolor. Consequatur officia
         </SingleTestimonial>
         <SingleTestimonial
-          image="../../public/images/testimonial/image-jeanette.jpg"
+          image="/images/testimonial/image-jeanette.jpg"
           name="Jeanette Harmon"
           header="An overall wonderfull and rewarding experience"
           bgColor="bg-white"
@@ -51,7 +51,7 @@ function Testimonial() {
           optio earum quod dolor. Consequatur officia nam dolore assumenda"
         </SingleTestimonial>
         {/* <SingleTestimonial
-          image="../../public/images/testimonial/image-jonathan.jpg"
+          image="/images/testimonial/image-jonathan.jpg"
           name="Jonathan Walters"
           header="The team was very supportive and kept me motivated"
           bgColor="bg-zinc-600"
@@ -65,7 +65,7 @@ function Testimonial() {
           corrupti? Laboriosam veniam laudantium sint commodi."
         </SingleTestimonial> */}
         <SingleTestimonial
-          image="../../public/images/testimonial/image-patrick.jpg"
+          image="/images/testimonial/image-patrick.jpg"
           name="Patrick Abrams"
           header="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
           tempora, quos velit natus architecto repudiandae consequuntur, laborum"
@@ -84,7 +84,7 @@ function Testimonial() {
           mollitia quam? "
         </SingleTestimonial>
         <SingleTestimonial
-          image="../../public/images/testimonial/image-kira.jpg"
+          image="/images/testimonial/image-kira.jpg"
           name="Kira Whittle"
           header="Such a life-changing experience. Highly recommended!"
           bgColor="bg-white"

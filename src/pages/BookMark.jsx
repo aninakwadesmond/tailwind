@@ -33,7 +33,7 @@ function BookMark() {
 
             <div className="flex items-center justify-start space-x-3">
               <img
-                src="../../public/images/bookmark/images/logo-bookmark.svg"
+                src="/images/bookmark/images/logo-bookmark.svg"
                 alt="bookmark"
                 className={`${menu ? "z-20" : ""}`}
               />
@@ -132,7 +132,7 @@ function BookMark() {
           <main className="relative flex w-full flex-col items-center justify-center md:mx-auto md:max-w-[50rem] md:flex-row md:gap-6 lg:max-w-[60rem]">
             <span className="top-[50%] -right-200 -bottom-10 left-[70%] -z-10 rounded-full bg-blue-700/80 md:absolute"></span>
             <img
-              src="../../public/images/bookmark/images/illustration-hero.svg"
+              src="/images/bookmark/images/illustration-hero.svg"
               alt="illratiion-Image"
               className="max-w-[23rem] md:order-2 md:max-w-[25rem] lg:max-w-[30rem]"
             />
@@ -279,7 +279,7 @@ function BookMark() {
           <div className="flex w-full flex-col items-center justify-center space-y-5 bg-gray-950 px-4 py-6 md:flex-row md:justify-between md:px-10">
             <div className="flex flex-col items-center justify-center gap-3 md:flex-row md:justify-start">
               <img
-                src="../../public/images/bookmark/images/logo-bookmark.svg"
+                src="/images/bookmark/images/logo-bookmark.svg"
                 alt="Bookmark"
               />
               <a
@@ -353,7 +353,7 @@ function Extension({ logo, translateY }) {
     >
       <div className="flex w-full flex-col items-center justify-center space-y-2 border-b-2 border-dashed border-b-zinc-200 pb-4">
         <img
-          src={`../../public/images/bookmark/images/logo-${logo}.svg`}
+          src={`/images/bookmark/images/logo-${logo}.svg`}
           alt="chrome"
           className="max-w-[10rem]"
         />
@@ -379,7 +379,7 @@ function SearchContent({ header, image }) {
     <div className="relative flex max-w-[35rem] items-center justify-center gap-6 md:max-w-[42rem] md:items-start md:gap-10 lg:items-start">
       <span className="right-[60%] -bottom-15 -left-100 -z-10 h-[10rem] rounded-full bg-blue-500 md:absolute"></span>
       <img
-        src={`../../public/images/bookmark/images/illustration-features-tab-${image}.svg`}
+        src={`/images/bookmark/images/illustration-features-tab-${image}.svg`}
         alt="image profile"
         className="max-w-[15rem] md:max-w-[20rem]"
       />

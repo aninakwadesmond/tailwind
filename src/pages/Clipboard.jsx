@@ -26,13 +26,13 @@ function Clipboard() {
         <div
           className="relative flex h-screen w-screen flex-col items-center justify-center space-y-4 bg-cover bg-center bg-no-repeat md:mx-auto md:mb-20 md:h-auto md:pt-20"
           style={{
-            backgroundImage: `url(../../public/images/clip/bg-header-mobile.png) `,
+            backgroundImage: `url(/images/clip/bg-header-mobile.png) `,
           }}
         >
           <span className="absolute top-0 right-0 bottom-0 left-0 -z-10 h-screen w-screen bg-linear-to-b from-sky-50/60 to-white"></span>
           <h1 className="">
             <img
-              src="../../public/images/clip/logo.svg "
+              src="/images/clip/logo.svg "
               alt="logo image"
               className="w-[80%]"
             />
@@ -69,7 +69,7 @@ function Clipboard() {
           <div className="mb-20 flex flex-col items-center justify-center space-y-8 md:mx-auto md:w-[45rem] md:flex-row md:items-start md:space-x-5 lg:w-[55rem]">
             <div className="mt-4 flex items-center justify-center md:w-[70%]">
               <img
-                src="../../public/images/clip/image-computer.png"
+                src="/images/clip/image-computer.png"
                 alt="computer"
                 className="w-[70%] md:w-full"
               />
@@ -114,7 +114,7 @@ function Clipboard() {
           </p>
           <div className="mt-10 flex items-center justify-center">
             <img
-              src="../../public/images/clip/image-devices.png"
+              src="/images/clip/image-devices.png"
               alt=""
               className="w-[70%] md:w-[60%]"
             />
@@ -132,7 +132,7 @@ function Clipboard() {
               <div className="mt-7 flex flex-col items-center justify-center gap-2">
                 <div className="flex items-center justify-center">
                   <img
-                    src="../../public/images/clip/icon-blacklist.svg"
+                    src="/images/clip/icon-blacklist.svg"
                     alt=""
                     className="w-[70%]"
                   />
@@ -147,7 +147,7 @@ function Clipboard() {
               </div>
               <div className="mt-7 flex flex-col items-center justify-center gap-2">
                 <p className="flex items-center justify-center">
-                  <img src="../../public/images/clip/icon-text.svg" alt="" />
+                  <img src="/images/clip/icon-text.svg" alt="" />
                 </p>
                 <h3 className="text-md font-bold tracking-tight text-gray-500">
                   Plain Texts Snippests
@@ -160,7 +160,7 @@ function Clipboard() {
               <div className="mt-7 flex flex-col items-center justify-center gap-3">
                 <p className="flex items-center justify-center">
                   <img
-                    src="../../public/images/clip/icon-preview.svg"
+                    src="/images/clip/icon-preview.svg"
                     alt="preview icon"
                     className="w-[70%]"
                   />
@@ -179,7 +179,7 @@ function Clipboard() {
           {logos.map((brand) => (
             <p className="">
               <img
-                src={`../../public/images/clip/logo-${brand}.png`}
+                src={`/images/clip/logo-${brand}.png`}
                 alt={`${brand} logo`}
                 className="md:w-[70%]"
               />
@@ -205,11 +205,7 @@ function Clipboard() {
         </div>
         <div className="mt-10 flex items-center justify-between space-x-6 bg-amber-50/40 px-7 py-5 md:mx-auto md:w-[70%]">
           <p className="flex items-center justify-between">
-            <img
-              src="../../public/images/clip/logo.svg"
-              alt="logo-image"
-              className="w-8"
-            />
+            <img src="/images/clip/logo.svg" alt="logo-image" className="w-8" />
           </p>
           <div className="flex w-[60%] flex-wrap items-center justify-start space-x-8">
             {footerActions.map((foot) => (

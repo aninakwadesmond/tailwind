@@ -5,7 +5,7 @@ function Email() {
         {/* <div></div> */}
         <p className="mb-4 h-1/2 w-full md:h-full">
           <img
-            src="../../public/images/image.jpg"
+            src="/images/image.jpg"
             alt="image seed"
             className="h-full w-full rounded-md object-cover md:rounded-br-none md:rounded-bl-none"
           />

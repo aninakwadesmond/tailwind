@@ -57,14 +57,14 @@ function Fylo() {
         <section
           className="bg- bg-size my-6 mt-8 flex w-screen flex-col items-center justify-center space-y-5 bg-bottom bg-no-repeat pb-50"
           style={{
-            backgroundImage: `url("../../public/images/fylo/images/bg-curvy-${color ? "light" : "dark"}-mode.svg")`,
+            backgroundImage: `url("/images/fylo/images/bg-curvy-${color ? "light" : "dark"}-mode.svg")`,
             backgroundSize: "100%",
           }}
         >
           <nav className="flex w-[90%] flex-col items-center justify-center space-y-10 p-2 md:flex-row md:justify-between md:space-y-0">
             <p className="flex items-center justify-start space-x-3">
               <img
-                src={`../../public/images/fylo/images/logo-${color ? "light" : "dark"}-mode.svg`}
+                src={`/images/fylo/images/logo-${color ? "light" : "dark"}-mode.svg`}
                 alt="logo"
               />
             </p>
@@ -92,7 +92,7 @@ function Fylo() {
           <main className="flex flex-col items-center justify-center space-y-4">
             <p className="flex items-center justify-center">
               <img
-                src="../../public/images/fylo/images/illustration-intro.png"
+                src="/images/fylo/images/illustration-intro.png"
                 alt="illustration-intro"
                 className="w-[20rem] md:w-[30rem] lg:w-[35rem]"
               />
@@ -158,7 +158,7 @@ function Fylo() {
           <div className="col flex items-start justify-center space-y-20 md:flex-row md:justify-between">
             <p className="flex items-center justify-start">
               <img
-                src="../../public/images/fylo/images/illustration-stay-productive.png"
+                src="/images/fylo/images/illustration-stay-productive.png"
                 alt="productive-images"
                 className="max-w-[25rem] md:max-w-[22rem]"
               />
@@ -190,7 +190,7 @@ function Fylo() {
         <section
           className="mt-40 mb-10 flex flex-col items-center justify-center space-y-6 bg-top-left md:mx-auto md:w-[90%] md:flex-row md:gap-10 md:space-y-0"
           // style={{
-          //   backgroundImage: "url(../../public/images/fylo/images/bg-quotes.png)",
+          //   backgroundImage: "url(/images/fylo/images/bg-quotes.png)",
           //   backgroundSize: "4rem",
           //   backgroundColor: "red",
           // }}
@@ -286,7 +286,7 @@ function Testimonial({ children, name, image, position }) {
     <div className="relative mx-auto flex w-[28.5rem] flex-col space-y-4 rounded-md bg-gray-800 px-6 py-5 shadow-xl shadow-gray-800/20">
       {image === 1 && (
         <img
-          src="../../public/images/fylo/images/bg-quotes.png"
+          src="/images/fylo/images/bg-quotes.png"
           alt=""
           className="absolute -top-10 left-0 -z-10"
         />
@@ -295,7 +295,7 @@ function Testimonial({ children, name, image, position }) {
       <div className="flex items-center justify-start space-x-2">
         <p>
           <img
-            src={`../../public/images/fylo/images/profile-${image}.jpg`}
+            src={`/images/fylo/images/profile-${image}.jpg`}
             alt="image Sarish"
             className="w-[3rem] rounded-full"
           />
@@ -317,7 +317,7 @@ function Service({ icon, header, children }) {
     <div className="flex flex-col items-center justify-center space-y-2 md:w-1/2">
       <p className="flex items-center justify-center">
         <img
-          src={`../../public/images/fylo/images/icon-${icon}.svg`}
+          src={`/images/fylo/images/icon-${icon}.svg`}
           alt="image access anywhere"
         />
       </p>

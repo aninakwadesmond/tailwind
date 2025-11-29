@@ -4,7 +4,7 @@ function Pricing() {
       <div className="flex h-auto w-80 flex-col items-start justify-center gap-4 bg-white p-4 md:w-150 md:flex-row">
         <div className="h-full w-full bg-amber-500">
           <img
-            src="../../public/images/headphone.png
+            src="/images/headphone.png
           "
             className="w-full transform object-contain duration-1000 hover:scale-105 hover:cursor-pointer"
             alt=""
@@ -33,18 +33,14 @@ function Pricing() {
           </p>
           <button className="r flex w-full cursor-pointer items-center justify-center gap-2 rounded-md border-2 border-zinc-300 py-2 tracking-tighter text-gray-500 capitalize shadow-xl">
             <span className="inline-block h-5 w-5">
-              <img
-                src="../../public/images/weight.png"
-                alt=""
-                className="h-full w-full"
-              />
+              <img src="/images/weight.png" alt="" className="h-full w-full" />
             </span>
             add chart
           </button>
           <button className="flex w-full items-center justify-center gap-2 rounded-md border-2 border-zinc-300 py-2 tracking-tighter text-gray-500 capitalize shadow-xl">
             <p className="h-5 w-5">
               <img
-                src="../../public/images/heart.png"
+                src="/images/heart.png"
                 alt=" image"
                 className="h-full w-full"
               />

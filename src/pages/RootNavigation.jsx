@@ -23,7 +23,7 @@ function Navigation({ nav, setNav }) {
     <div className="fixed top-0 right-0 left-0 z-50 flex w-screen items-center justify-between bg-linear-to-br from-gray-900 to-gray-950 px-10 py-2">
       <p className="flex flex-col items-center justify-center">
         <img
-          src="../../public/images/clip/logo.svg"
+          src="/images/clip/logo.svg"
           alt="image"
           className={`w-[2rem] ${nav ? "z-40" : ""}`}
         />

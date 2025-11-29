@@ -49,8 +49,7 @@ function Studio() {
       <section
         className={`relative flex ${!menu ? "h-100" : "h-screen"} w-screen flex-col items-center justify-start space-y-20 overflow-x-hidden bg-cover bg-center bg-no-repeat pt-5`}
         style={{
-          backgroundImage:
-            "url(../../public/images/images/desktop/image-hero.jpg",
+          backgroundImage: "url(/images/images/desktop/image-hero.jpg",
         }}
         id="about"
       >
@@ -239,7 +238,7 @@ function Studio() {
       <div className="group relative cursor-pointer self-baseline rounded">
         <span className="absolute top-0 right-0 bottom-0 left-0 w-full rounded bg-linear-to-br from-gray-950/10 to-gray-950/70 transition-all duration-5000 group-hover:to-gray-300/70"></span>
         <img
-          src={`../../public/images/images/${screen > 1024 ? "desktop" : "mobile"}/image-${image}.jpg `}
+          src={`/images/images/${screen > 1024 ? "desktop" : "mobile"}/image-${image}.jpg `}
           alt="earth-image"
           className="duration:500 w-[348px] transform rounded object-cover object-center group-hover:scale-103"
         />

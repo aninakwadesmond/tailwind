@@ -42,7 +42,7 @@ function ImageContainer({ image }) {
   return (
     <div className="group relative">
       <img
-        src={`../../public/images/image${image}.jpg`}
+        src={`/images/image${image}.jpg`}
         alt="image snaps  "
         className="cursor-pointer rounded-sm duration-500 group-hover:scale-102"
       />

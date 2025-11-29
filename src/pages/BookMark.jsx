@@ -22,20 +22,20 @@ function BookMark() {
   return (
     <BookmarkContext value={{ cur, setCur }}>
       <div
-        className={`relative flex w-screen flex-col items-center justify-center`}
+        className={`relative flex w-screen flex-col items-center justify-center overflow-x-hidden`}
       >
         {/* hero section */}
-        <section className="mx-auto flex w-[95%] flex-col items-center justify-center space-y-10">
+        <section className="mx-auto flex max-w-[95%] flex-col items-center justify-center space-y-10">
           <nav className="flex w-full items-center justify-between p-3">
             {menu && (
               <span className="buttom-[0%] absolute top-[0%] right-[0%] left-[0%] z-10 h-full w-screen bg-gray-950/70"></span>
             )}
 
-            <div className="flex items-center justify-start space-x-3">
+            <div className="flex w-full items-center justify-start space-x-3">
               <img
                 src="/images/bookmark/images/logo-bookmark.svg"
                 alt="bookmark"
-                className={`${menu ? "z-20" : ""}`}
+                className={`${menu ? "z-20" : ""} max-w-[90%] sm:max-w-[30rem]`}
               />
               {/* <h2 className="text-xl font-semibold tracking-wide text-gray-800 uppercase">
               Bookmark
@@ -170,7 +170,7 @@ function BookMark() {
             <h2 className="text-center text-3xl font-bold tracking-wide text-gray-950">
               Features
             </h2>
-            <p className="max-w-[30rem] text-center text-sm font-semibold tracking-tight text-gray-400">
+            <p className="sm:sm-w-[30rem] mx-auto max-w-[95%] text-center text-sm font-semibold tracking-tight text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Repellendus accusantium illum nesciunt! Non alias nihil ipsam
               voluptate enim ab sit exercitationem deleniti placeat dolorum,
@@ -214,7 +214,7 @@ function BookMark() {
 
         {/* frequnetly askesd questions */}
         <section
-          className="my-10 flex w-[27rem] flex-col items-center justify-center space-y-5 pt-15"
+          className="mx-auto my-10 flex w-[95%] flex-col items-center justify-center space-y-5 pt-15 sm:w-[27rem]"
           id="faq"
         >
           <div className="flex flex-col items-center justify-center gap-1">
@@ -239,10 +239,10 @@ function BookMark() {
 
         {/* footer */}
         <section
-          className="flex w-full flex-col items-center justify-center space-y-0"
+          className="flex w-full flex-col items-center justify-center space-y-0 bg-blue-500"
           id="footer"
         >
-          <div className="flex w-full flex-col items-center justify-center space-y-4 bg-blue-500 py-10 pb-15 text-blue-50 md:pb-24">
+          <div className="mx-auto flex w-[95%] flex-col items-center justify-center space-y-4 py-10 pb-15 text-blue-50 sm:w-full md:pb-24">
             <p className="tracking wide text-center text-sm uppercase">
               35,000+ already joined
             </p>
@@ -250,8 +250,8 @@ function BookMark() {
               Stay up-to-date with what we're doing
             </h2>
 
-            <div className="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-6">
-              <div className="relative w-[25rem]">
+            <div className="flex w-full flex-col items-center justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-6">
+              <div className="relative w-full sm:w-[25rem]">
                 <input
                   type="text"
                   placeholder=""
@@ -276,7 +276,7 @@ function BookMark() {
               </button>
             </div>
           </div>
-          <div className="flex w-full flex-col items-center justify-center space-y-5 bg-gray-950 px-4 py-6 md:flex-row md:justify-between md:px-10">
+          <div className="flex w-full flex-col items-center justify-center space-y-5 bg-gray-950 px-4 py-6 sm:w-full md:flex-row md:justify-between md:px-10">
             <div className="flex flex-col items-center justify-center gap-3 md:flex-row md:justify-start">
               <img
                 src="/images/bookmark/images/logo-bookmark.svg"
@@ -376,12 +376,12 @@ function SearchContent({ header, image }) {
 
   if (image !== cur) return;
   return (
-    <div className="relative flex max-w-[35rem] items-center justify-center gap-6 md:max-w-[42rem] md:items-start md:gap-10 lg:items-start">
+    <div className="relative mx-auto flex max-w-[95%] items-center justify-center gap-6 sm:max-w-[35rem] md:max-w-[42rem] md:items-start md:gap-10 lg:items-start">
       <span className="right-[60%] -bottom-15 -left-100 -z-10 h-[10rem] rounded-full bg-blue-500 md:absolute"></span>
       <img
         src={`/images/bookmark/images/illustration-features-tab-${image}.svg`}
         alt="image profile"
-        className="max-w-[15rem] md:max-w-[20rem]"
+        className="max-w-[50%] sm:max-w-[15rem] md:max-w-[20rem]"
       />
       <div className="flex flex-col items-start justify-center gap-4">
         <h2 className="text-start text-xl font-bold tracking-wide text-gray-950">

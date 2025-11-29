@@ -37,13 +37,17 @@ function Shortly() {
   }, []);
   return (
     <ShortlyContext value={{ setMenu, menu }}>
-      <div className="relative flex flex-col items-center justify-center">
+      <div className="relative flex flex-col items-center justify-center overflow-x-hidden">
         {/* hero */}
         <section className="flex w-screen flex-col items-center justify-center p-4 md:mx-auto md:w-[95%] lg:w-[90%]">
           <div className="flex w-full items-center justify-between">
-            <div className="flex items-center justify-start space-x-6">
-              <p>
-                <img src="/images/shortly/logo.svg" alt="logo image" />
+            <div className="flex w-full items-center justify-start space-x-6">
+              <p className="">
+                <img
+                  src="/images/shortly/logo.svg"
+                  alt="logo image"
+                  className=""
+                />
               </p>
               <div className="hidden items-center justify-start space-x-4 md:flex">
                 <a
@@ -92,7 +96,7 @@ function Shortly() {
               <img
                 src="/images/shortly/illustration-working.svg"
                 alt="working"
-                className="max-w-[28rem] md:max-w-[18rem] md:self-end lg:max-w-[22rem]"
+                className="w-[95%] sm:max-w-[28rem] md:max-w-[18rem] md:self-end lg:max-w-[22rem]"
               />
             </div>
             <div className="flex flex-col items-center justify-center space-y-3 md:-order-1 md:w-[40rem] md:items-start md:space-y-4">
@@ -164,7 +168,7 @@ function Shortly() {
         >
           <Form
             action=""
-            className="flex w-[25rem] flex-col space-y-4 rounded-md bg-indigo-950 px-8 py-10 md:w-[37rem] md:flex-row md:justify-between md:gap-4 md:space-x-4 lg:w-[44rem]"
+            className="mx-auto flex w-[90%] flex-col space-y-4 rounded-md bg-indigo-950 px-8 py-10 sm:w-[25rem] md:w-[37rem] md:flex-row md:justify-between md:gap-4 md:space-x-4 lg:w-[44rem]"
           >
             <input
               type="text"

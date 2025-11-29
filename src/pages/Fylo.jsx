@@ -50,7 +50,7 @@ function Fylo() {
   return (
     <FyloContext value={{ color }}>
       <div
-        className={`${color ? "bg-white" : "bg-gray-950"} flex w-screen flex-col items-center justify-center`}
+        className={`${color ? "bg-white" : "bg-gray-950"} flex w-screen flex-col items-center justify-center overflow-hidden`}
       >
         {/* section hero */}
 
@@ -117,7 +117,7 @@ function Fylo() {
         </section>
 
         {/* services */}
-        <section className="flex max-w-[30rem] flex-col flex-wrap items-center justify-center gap-15 px-6 py-10 md:max-w-[60rem] md:justify-between lg:max-w-[65rem]">
+        <section className="mx-auto flex max-w-[95%] flex-col flex-wrap items-center justify-center gap-15 px-6 py-10 md:max-w-[60rem] md:justify-between lg:max-w-[65rem]">
           <div className="flex flex-col items-center justify-center gap-10 md:flex-row md:gap-30">
             <Service
               icon="access-anywhere"
@@ -154,17 +154,17 @@ function Fylo() {
 
         {/* stay Productive */}
 
-        <section className="mt-20 mb-6 flex flex-col items-center justify-center space-y-20 md:w-[50rem] md:flex-row md:justify-start md:space-x-20 md:px-10 lg:w-[66rem]">
+        <section className="mx-auto mt-20 mb-6 flex max-w-[95%] flex-col items-center justify-center space-y-20 md:w-[50rem] md:flex-row md:justify-start md:space-x-20 md:px-10 lg:w-[66rem]">
           <div className="col flex items-start justify-center space-y-20 md:flex-row md:justify-between">
             <p className="flex items-center justify-start">
               <img
                 src="/images/fylo/images/illustration-stay-productive.png"
                 alt="productive-images"
-                className="max-w-[25rem] md:max-w-[22rem]"
+                className="max-w-[90%] sm:max-w-[25rem] md:max-w-[22rem]"
               />
             </p>
           </div>
-          <div className="mx-auto flex w-[30rem] flex-col items-start justify-center space-y-4">
+          <div className="mx-auto flex max-w-[20rem] flex-col items-start justify-center space-y-4">
             <h2 className="w-full text-center text-xl font-bold tracking-tight text-zinc-300 md:w-2/3 md:text-start md:text-2xl">
               Stay productive, wherever you are
             </h2>
@@ -188,7 +188,7 @@ function Fylo() {
 
         {/* testimonial */}
         <section
-          className="mt-40 mb-10 flex flex-col items-center justify-center space-y-6 bg-top-left md:mx-auto md:w-[90%] md:flex-row md:gap-10 md:space-y-0"
+          className="auto mt-40 mb-10 flex max-w-[95%] flex-col items-center justify-center space-y-6 bg-top-left px-4 md:mx-auto md:w-[90%] md:flex-row md:gap-10 md:space-y-0"
           // style={{
           //   backgroundImage: "url(/images/fylo/images/bg-quotes.png)",
           //   backgroundSize: "4rem",
@@ -225,7 +225,7 @@ function Fylo() {
         </section>
 
         {/* form submission */}
-        <Form className="mt-30 mb-10 flex w-[24rem] flex-col items-center justify-center space-y-3 rounded-md bg-gray-800 px-5 py-7 md:w-[38rem]">
+        <Form className="mx-auto mt-30 mb-10 flex max-w-[90%] flex-col items-center justify-center space-y-3 rounded-md bg-gray-800 px-5 py-7 sm:w-[30rem] md:w-[35rem]">
           <div className="flex w-full flex-col items-center justify-center gap-4">
             <h2 className="text-center text-xl font-bold tracking-normal text-zinc-300">
               Get early access today
@@ -248,13 +248,13 @@ function Fylo() {
         </Form>
 
         {/* footer */}
-        <section className="mt-20 flex w-full flex-col items-start justify-center gap-8 bg-slate-950 px-6 py-10 text-zinc-400 md:flex-row md:justify-between">
+        <section className="mx-auto mt-20 flex w-[95%] flex-col items-start justify-center gap-8 bg-slate-950 px-6 py-10 text-zinc-400 md:flex-row md:justify-between">
           <div className="flex flex-col items-start justify-center gap-1 text-sm">
             <p className="flex items-center justify-start space-x-3">
               <FontAwesomeIcon icon={faPhone} className="text-zinc-400" />
               <span>+233 849 0032</span>
             </p>
-            <p className="flex items-center justify-start space-x-3">
+            <p className="line-clamp-1 flex flex-wrap items-center justify-start space-x-3">
               <FontAwesomeIcon icon={faMessage} />
               <span>aninakwahdesmond3@gmail.com</span>
             </p>
@@ -283,7 +283,7 @@ function Fylo() {
 
 function Testimonial({ children, name, image, position }) {
   return (
-    <div className="relative mx-auto flex w-[28.5rem] flex-col space-y-4 rounded-md bg-gray-800 px-6 py-5 shadow-xl shadow-gray-800/20">
+    <div className="relative mx-auto flex max-w-[28.5rem] flex-col space-y-4 rounded-md bg-gray-800 px-6 py-5 shadow-xl shadow-gray-800/20">
       {image === 1 && (
         <img
           src="/images/fylo/images/bg-quotes.png"

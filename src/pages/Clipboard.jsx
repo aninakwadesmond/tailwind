@@ -203,16 +203,22 @@ function Clipboard() {
             </button>
           </div>
         </div>
-        <div className="mt-10 flex items-center justify-between space-x-6 bg-amber-50/40 px-7 py-5 md:mx-auto md:w-[70%]">
-          <p className="flex items-center justify-between">
-            <img src="/images/clip/logo.svg" alt="logo-image" className="w-8" />
-          </p>
-          <div className="flex w-[60%] flex-wrap items-center justify-start space-x-8">
-            {footerActions.map((foot) => (
-              <span className="text-sm font-semibold text-gray-300">
-                {foot}
-              </span>
-            ))}
+        <div className="md:w-[90%]md:space-x-0 mt-10 flex flex-col items-center justify-center gap-4 bg-amber-50/40 px-7 py-5 sm:flex-row sm:justify-between md:mx-auto">
+          <div className="flex items-center justify-center gap-4">
+            <p className="flex items-center justify-between">
+              <img
+                src="/images/clip/logo.svg"
+                alt="logo-image"
+                className="w-10 sm:w-8"
+              />
+            </p>
+            <div className="flex flex-wrap items-center justify-start space-x-4 sm:w-[30rem]">
+              {footerActions.map((foot) => (
+                <span className="text-sm font-semibold text-gray-300">
+                  {foot}
+                </span>
+              ))}
+            </div>
           </div>
           <div className="flex items-center justify-start gap-1">
             {/* {Icons.map((icon) => (
@@ -220,15 +226,15 @@ function Clipboard() {
             ))} */}
             <FontAwesomeIcon
               icon={faFacebookSquare}
-              className="cursor-pointer hover:text-sky-300"
+              className="cursor-pointer text-2xl text-zinc-600 hover:text-sky-300"
             />
             <FontAwesomeIcon
               icon={faTwitter}
-              className="cursor-pointer hover:text-sky-300"
+              className="cursor-pointer text-2xl text-zinc-600 hover:text-sky-300"
             />
             <FontAwesomeIcon
               icon={faInstagram}
-              className="cursor-pointer hover:text-sky-300"
+              className="cursor-pointer text-2xl text-zinc-600 hover:text-sky-300"
             />
           </div>
         </div>

@@ -44,7 +44,7 @@ function Studio() {
       {/* <h1>{width}</h1> */}
       {/* hero-section */}
       {menu && (
-        <span className="absolute top-0 right-0 bottom-[0%] left-0 z-30 h-full w-full bg-linear-to-tr from-black to-gray-950"></span>
+        <span className="absolute top-0 right-0 bottom-[0%] left-0 z-30 h-full min-w-screen bg-linear-to-tr from-black to-gray-950"></span>
       )}
       <section
         className={`relative flex ${!menu ? "h-100" : "h-screen"} w-screen flex-col items-center justify-start space-y-20 overflow-x-hidden bg-cover bg-center bg-no-repeat pt-5`}
@@ -64,7 +64,8 @@ function Studio() {
             loopStudio
           </h1>
           <div
-            className={`items-center justify-center gap-2 space-x-2 text-lg text-fuchsia-200 md:block ${menu ? `text-md absolute top-[20%] flex flex-col space-y-2 space-x-0` : "hidden"}`}
+            className={`items-center justify-center gap-2 space-x-2 text-lg text-fuchsia-200 md:block ${menu ? `text-md lg:top[40%] lg:top[60%] absolute top-[20%] flex flex-col space-y-2 space-x-0` : "hidden"}`}
+            style={menu ? { display: "flex" } : {}}
           >
             <a
               href="#about"
@@ -104,6 +105,7 @@ function Studio() {
           <span
             className={`md:hidden ${menu ? "flex w-full justify-end" : ""}`}
             onClick={handleOpenMenu}
+            style={menu ? { display: "flex" } : {}}
           >
             {!menu ? (
               <FontAwesomeIcon
@@ -157,7 +159,7 @@ function Studio() {
         className="mb-6 flex w-screen flex-col items-center justify-center space-y-10 pt-15 md:mx-auto"
         id="event"
       >
-        <div className="flex flex-col items-center justify-center space-y-10 md:relative md:max-w-[45rem] lg:max-w-[60rem]">
+        <div className="mx-auto flex max-w-[95%] flex-col items-center justify-center space-y-10 sm:max-w-[45rem] md:relative lg:max-w-[60rem]">
           <div className="flex w-full items-center justify-center md:justify-start">
             <h1 className="mt-10 flex items-center justify-center text-center text-3xl font-bold tracking-normal text-gray-600 uppercase md:justify-start">
               our creation
